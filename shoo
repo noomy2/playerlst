@@ -3,3 +3,11 @@ local ImNotDumb = {
     3415172894,
     3415172894,
 }
+local Blacklist = {
+
+}
+if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
+   game.Players.LocalPlayer:Kick('You are NOT whitelisted, buy for $10 in our server or use demo.')
+    wait(3)
+    game:service('TeleportService'):teleport(8642729414)
+end
